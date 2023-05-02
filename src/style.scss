@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+.grafico-cotacao-container {
+  padding: 16px;
+  display: flex;
+  gap: 198px;
+  color: #348344;
+  .title {
+    font-size: 24px;
+  }
+  .more-info {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: text-bottom;
+    &::after {
+      content: '+';
+      position: absolute;
+      width: 13px;
+      height: 14px;
+      margin: 0px 0.5px 27.5px 7.5px;
+      border: solid 1px #348344;
+      border-radius: 50%;
+    }
+  }
+}
+button {
+  font-weight: bold;
+  align-items: flex-start;
+  padding: 5px;
+
+  background-color: #348344;
+  color: white;
+
+  border: none;
+  display: inline-block;
+  height: 24px;
+  text-align: center;
+  text-shadow: none;
+  border-radius: 5px;
+  margin: 4px 2px;
+
+  &:disabled {
+    background-color: white;
+    color: #348344;
+  }
+}
